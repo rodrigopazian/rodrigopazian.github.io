@@ -1,0 +1,40 @@
+$bgcolor: rgb(172,172,172);
+$menucolor: white;
+$buttonmenubgcolor: rgb(86,86,86);
+$menufontsize: 28px;
+$buttonmenuwidth: 300px;
+$buttonmenuheight: 50px;
+$buttonmenupadding: 10px;
+$buttonmenumargin: 10px;
+
+
+body {
+    background-color: $bgcolor;
+}
+
+.sidemenu {
+    width: $buttonmenuwidth;
+}
+
+.division {    
+    border: 2px solid black;
+    background-color: $buttonmenubgcolor;
+    color: $menucolor;
+    font-size: $menufontsize;
+    width: 276px;
+    height: 30px;
+    padding: $buttonmenupadding;
+    margin-left: $buttonmenumargin;
+    margin-right: $buttonmenumargin;
+}
+
+button {
+    background-color: $buttonmenubgcolor;
+    color: $menucolor;
+    font-size: $menufontsize;
+    width: $buttonmenuwidth;
+    height: $buttonmenuheight;
+    padding: $buttonmenupadding;
+    margin-left: $buttonmenumargin;
+    margin-right: $buttonmenumargin;
+}
