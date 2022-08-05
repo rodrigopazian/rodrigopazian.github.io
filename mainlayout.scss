@@ -1,37 +1,47 @@
-$bgcolor: rgb(172,172,172);
+$bgcolor: rgb(52,52,52);
+
+//header
+$headerwidth: 1870px;
+$headerheigth: 200px;
+$headerbgcolor:rgb(43,43,43);
+
+
+//sidemenu
 $menucolor: white;
-$buttonmenubgcolor: rgb(52,52,52);
-$menufontsize: 28px;
+$buttonmenubgcolor: rgb(43,43,43);
+$menufontsize: 17px;
+$menufont: fantasy, sans-serif;
 $buttonmenuwidth: 300px;
 $buttonmenuheight: 50px;
 $buttonmenupadding: 10px;
-$buttonmenumargin: 10px;
+$buttonmenumargin: 0px;
+
 
 
 body {
     background-color: $bgcolor;
 }
-
 .container {
+
+}
+.header {
+    width: $headerwidth;
+    height: $headerheigth;
+    background-color: $headerbgcolor;
+    padding: $buttonmenupadding;
 }
 
 .sidemenu {
     width: $buttonmenuwidth;
-}
-
-.div {    
-    border: 2px solid black;
-    background-color: $buttonmenubgcolor;
-    color: $menucolor;
-    font-size: $menufontsize;
-    width: 276px;
-    height: 30px;
+    height: 1000px;
+    background-color: $headerbgcolor;
     padding: $buttonmenupadding;
-    margin-left: $buttonmenumargin;
-    margin-right: $buttonmenumargin;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 button {
+    font-family: $menufont;
     background-color: $buttonmenubgcolor;
     color: $menucolor;
     font-size: $menufontsize;
@@ -40,4 +50,10 @@ button {
     padding: $buttonmenupadding;
     margin-left: $buttonmenumargin;
     margin-right: $buttonmenumargin;
+}
+.bottom {
+    width: $headerwidth;
+    height: $headerheigth;
+    background-color: $headerbgcolor;
+    padding: $buttonmenupadding;
 }
