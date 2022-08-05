@@ -1,9 +1,9 @@
-$bgcolor: rgb(52,52,52);
+$bgcolor: rgb(255, 255, 255);
 
 //header
 $headerwidth: 1870px;
 $headerheigth: 200px;
-$headerbgcolor:rgba(43,43,43,10);
+$headerbgcolor:rgba(61, 61, 61, 0.8);
 
 
 //sidemenu
@@ -19,23 +19,32 @@ $buttonborderclr: rgba(20,20,20,0.5);
 
 $buttonhoverclr: rgba(220,220,220,0.5);
 
+$marginmainpage: 270px;
+
 body {
     background-color: $bgcolor;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.1)), url("assets/imgs/Wallpaper.jpg");   
+    background-blend-mode:darken;
+    
 }
-.header {
+
+header {
     width: $headerwidth;
     height: $headerheigth;
     background-color: $headerbgcolor;
     padding: $buttonmenupadding;
+    mix-blend-mode:screen;
+    border-radius: 3px;
 }
 
 .sidemenu {
     width: $buttonmenuwidth;
-    height: 1000px;
+    height: 2000px;
     background-color: $headerbgcolor;
     padding: $buttonmenupadding;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 2px;
 }
 
 button:hover {
@@ -43,6 +52,7 @@ button:hover {
     color: white;
     border: 1px solid $buttonhoverclr;
 }
+
 button {
     font-family: $menufont;
     background-color: $buttonmenubgcolor;
@@ -57,9 +67,17 @@ button {
     border: 2px solid $buttonborderclr;
     border-radius: 3px;
 }
-.bottom {
+
+.mainpage {
+    width: 1000px;
+    height: 1700px;
+    margin-left: $marginmainpage;
+}
+
+footer {
     width: $headerwidth;
     height: $headerheigth;
     background-color: $headerbgcolor;
     padding: $buttonmenupadding;
+    border-radius: 2px;
 }

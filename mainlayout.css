@@ -1,21 +1,26 @@
 body {
-  background-color: rgb(52, 52, 52);
+  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.1)), url("assets/imgs/Wallpaper.jpg");
+  background-blend-mode: darken;
 }
 
-.header {
+header {
   width: 1870px;
   height: 200px;
-  background-color: rgb(43, 43, 43);
+  background-color: rgba(61, 61, 61, 0.8);
   padding: 5px;
+  mix-blend-mode: screen;
+  border-radius: 3px;
 }
 
 .sidemenu {
   width: 243px;
-  height: 1000px;
-  background-color: rgb(43, 43, 43);
+  height: 2000px;
+  background-color: rgba(61, 61, 61, 0.8);
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 2px;
 }
 
 button:hover {
@@ -39,9 +44,16 @@ button {
   border-radius: 3px;
 }
 
-.bottom {
+.mainpage {
+  width: 1000px;
+  height: 1700px;
+  margin-left: 270px;
+}
+
+footer {
   width: 1870px;
   height: 200px;
-  background-color: rgb(43, 43, 43);
+  background-color: rgba(61, 61, 61, 0.8);
   padding: 5px;
+  border-radius: 2px;
 }/*# sourceMappingURL=mainlayout.css.map */

@@ -7,25 +7,56 @@
     <title>rodrigopazian</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container">        
         
-        <img name="galaxy" href="assets/imgs/Wallpaper.jpg" placeholder="Img background not loaded"></a>
-        <div class="header">
-        </div>
+        <header class="header">
+        </header>
+
+        <main>
+                    
+            <div class="sidemenu">
+                    <form>
+                        <button id="profile">Profile</button>
+                        <button id="repositories">GitHub Repositories</button>
+                        <button id="professional">Professional</button>
+                        <button id="personal">Personal</button>
+                        <button id="Null"></button>
+                        <button id="Null"></button>
+                        <button id="Null"></button>
+                        <button id="Null"></button>
+                    </form>
+            </div>
+            <div class="mainpage">
+                <iframe allowfullscreen src=""></iframe>
+                
+            </div>
+
+            <script>
+                function escreve(textobotao) {
+                    var texto = textobotao.innerHTML
+                    document.write(texto);
+                }
+
+                let body = document.querySelector('body');
+
+                document.querySelector('#profile').addEventListener('click', function() {
+                var profile = document.querySelector("#profile");
+                escreve(profile);
+                } );
+                document.querySelector('#repositories').addEventListener('click', function() {
+                var repositories = document.querySelector("#repositories");
+                escreve(repositories);
+                } );
+                document.querySelector('#professional').addEventListener('click', function() {
+                var professional = document.querySelector("#professional");
+                escreve(professional);
+                } );
+            </script>
         
-        <div class="sidemenu">
-                <button id="profile">Profile</button>
-                <button id="repositories">GitHub Repositories</button>
-                <button id="professional">Professional</button>
-                <button id="personal">Personal</button>
-                <button id="1"></button>
-                <button id="2"></button>
-                <button id="3"></button>
-                <button id="4"></button>
-        </div>
-        
-        <div class="bottom">          
-        </div>
+        </main>
+
+        <footer class="bottom">          
+        </footer>
 
     </div>    
 </body>
