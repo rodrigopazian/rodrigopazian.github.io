@@ -3,11 +3,11 @@ $bgcolor: rgb(52,52,52);
 //header
 $headerwidth: 1870px;
 $headerheigth: 200px;
-$headerbgcolor:rgb(43,43,43);
+$headerbgcolor:rgba(43,43,43,10);
 
 
 //sidemenu
-$menucolor: white;
+$menucolor: rgb(200,200,200);
 $buttonmenubgcolor: rgb(43,43,43);
 $menufontsize: 17px;
 $menufont: fantasy, sans-serif;
@@ -15,8 +15,9 @@ $buttonmenuwidth: 300px;
 $buttonmenuheight: 50px;
 $buttonmenupadding: 10px;
 $buttonmenumargin: 0px;
+$buttonborderclr: rgba(20,20,20,0.5);
 
-
+$buttonhoverclr: rgba(220,220,220,0.5);
 
 body {
     background-color: $bgcolor;
@@ -37,6 +38,11 @@ body {
     margin-bottom: 10px;
 }
 
+button:hover {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border: 1px solid $buttonhoverclr;
+}
 button {
     font-family: $menufont;
     background-color: $buttonmenubgcolor;
@@ -45,8 +51,10 @@ button {
     width: $buttonmenuwidth;
     height: $buttonmenuheight;
     padding: $buttonmenupadding;
+    margin-top: 3px;
     margin-left: $buttonmenumargin;
     margin-right: $buttonmenumargin;
+    border: 2px solid $buttonborderclr;
 }
 .bottom {
     width: $headerwidth;
