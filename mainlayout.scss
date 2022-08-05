@@ -11,9 +11,9 @@ $menucolor: rgb(200,200,200);
 $buttonmenubgcolor: rgb(43,43,43);
 $menufontsize: 17px;
 $menufont: fantasy, sans-serif;
-$buttonmenuwidth: 300px;
-$buttonmenuheight: 50px;
-$buttonmenupadding: 10px;
+$buttonmenuwidth: 243px;
+$buttonmenuheight: 43px;
+$buttonmenupadding: 5px;
 $buttonmenumargin: 0px;
 $buttonborderclr: rgba(20,20,20,0.5);
 
@@ -55,6 +55,7 @@ button {
     margin-left: $buttonmenumargin;
     margin-right: $buttonmenumargin;
     border: 2px solid $buttonborderclr;
+    border-radius: 3px;
 }
 .bottom {
     width: $headerwidth;
