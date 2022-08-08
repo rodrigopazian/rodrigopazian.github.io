@@ -6,8 +6,12 @@
     <link rel="stylesheet" href="mainlayout.css">
     <title>rodrigopazian</title>
     <script>
-        function escreveprofile() {
-            document.querySelector('#profiletext').innerHTML = 'Rodrigo Pazian';
+        let profiletext = 'Rodrigo Pazian<br>Brasileiro, 31 anos';
+        let repositoriestext = 'https://github.com/rodrigopazian<br>';
+        let professionaltext = 'OBJETIVO<br>Busco uma oportunidade na área de Tecnologia da Informação para adquirir experiência e aprofundar o conhecimento em desenvolvimento de softwares.<br>EXPERIÊNCIA<br>ThyssenKrupp, Campo Limpo SP — Técnico em eletrônica<br>OUTUBRO DE 2013 - SETEMBRO DE 2019<br>Técnico em eletrônica em Laboratório de Instrumentação Eletrônica, manutenção de equipamentos e sensores eletrônicos.<br>PAZIAN ESCRITÓRIO CONTÁBIL, Jundiaí SP — Auxiliar de Escritório<br>FEVEREIRO DE 2011 - JANEIRO DE 2012<br>';
+        let personaltext = '';
+        function escreve(mainpagetext) {
+            document.querySelector('#mainpagetext').innerHTML = mainpagetext;
         }
 
     </script> 
@@ -21,15 +25,15 @@
 
         <main>                    
             <div class="mainpage">
-                <div class="profiletext" id="profiletext"></div>
+                <div class="mainpagetext" id="mainpagetext"></div>
                 <!-- <iframe allowfullscreen src=""></iframe> -->
                 
             </div>    
             <div class="sidemenu">
-                        <button onclick="escreveprofile()" id="profile">Profile</button>
-                        <button id="repositories">GitHub Repositories</button>
-                        <button id="professional">Professional</button>
-                        <button id="personal">Personal</button>
+                        <button onclick="escreve(profiletext)" id="profile">Profile</button>
+                        <button onclick="escreve(repositoriestext)" id="repositories">GitHub Repositories</button>
+                        <button onclick="escreve(professionaltext)" id="professional">Professional</button>
+                        <button onclick="escreve(personaltext)" id="personal">Personal</button>
                         <button id="Null"></button>
                         <button id="Null"></button>
                         <button id="Null"></button>
