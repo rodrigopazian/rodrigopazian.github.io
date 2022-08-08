@@ -22,10 +22,18 @@ $buttonhoverclr: rgba(220,220,220,0.5);
 $marginmainpage: 270px;
 
 body {
-    background-color: $bgcolor;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.1)), url("assets/imgs/Wallpaper.jpg");   
+    // background-color: $bgcolor;
+    // display: flex;    
+    // flex-wrap: wrap;
+    background-image: url("assets/imgs/Wallpaper.jpg");  
+    opacity: 0.77; 
     background-blend-mode:darken;
     
+}
+
+#container header main footer {
+    display: flex;    
+    flex-wrap: wrap;
 }
 
 header {
@@ -37,11 +45,15 @@ header {
     border-radius: 3px;
 }
 
+main {
+    width: 1870px;
+}
+
 .sidemenu {
     width: $buttonmenuwidth;
     height: 2000px;
     background-color: $headerbgcolor;
-    padding: $buttonmenupadding;
+    margin: $buttonmenupadding;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 2px;
@@ -69,9 +81,14 @@ button {
 }
 
 .mainpage {
-    width: 1000px;
-    height: 1700px;
-    margin-left: $marginmainpage;
+    width: 700px;
+    height: 1400x;
+    color: white;
+    padding-left: 300px;
+    #profiletext {
+        width: 700px;
+        height: 100px;
+    }
 }
 
 footer {

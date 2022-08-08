@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mainlayout.css">
     <title>rodrigopazian</title>
+    <script>
+        function escreveprofile() {
+            document.querySelector('#profiletext').innerHTML = 'Rodrigo Pazian';
+        }
+
+    </script> 
 </head>
 <body>
-    <div class="container">        
+    <div id="container">        
         
         <header class="header">
+            
         </header>
 
-        <main>
-                    
+        <main>                    
+            <div class="mainpage">
+                <div class="profiletext" id="profiletext"></div>
+                <!-- <iframe allowfullscreen src=""></iframe> -->
+                
+            </div>    
             <div class="sidemenu">
-                    <form>
-                        <button id="profile">Profile</button>
+                        <button onclick="escreveprofile()" id="profile">Profile</button>
                         <button id="repositories">GitHub Repositories</button>
                         <button id="professional">Professional</button>
                         <button id="personal">Personal</button>
@@ -24,40 +34,14 @@
                         <button id="Null"></button>
                         <button id="Null"></button>
                         <button id="Null"></button>
-                    </form>
             </div>
-            <div class="mainpage">
-                <iframe allowfullscreen src=""></iframe>
-                
-            </div>
-
-            <script>
-                function escreve(textobotao) {
-                    var texto = textobotao.innerHTML
-                    document.write(texto);
-                }
-
-                let body = document.querySelector('body');
-
-                document.querySelector('#profile').addEventListener('click', function() {
-                var profile = document.querySelector("#profile");
-                escreve(profile);
-                } );
-                document.querySelector('#repositories').addEventListener('click', function() {
-                var repositories = document.querySelector("#repositories");
-                escreve(repositories);
-                } );
-                document.querySelector('#professional').addEventListener('click', function() {
-                var professional = document.querySelector("#professional");
-                escreve(professional);
-                } );
-            </script>
-        
+    
         </main>
 
         <footer class="bottom">          
         </footer>
+    </div> 
 
-    </div>    
+
 </body>
 </html>
