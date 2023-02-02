@@ -15,19 +15,19 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-
 }
 
 .container video {
   z-index: -1;
   overflow: hidden;
   position: fixed;
-  left: 0;
+  left: -7vw;
   top: 0;
   object-fit: cover;
-  width: 100vw;
+  width: 115vw;
   height: 100vh;
+  display: flex;
+  align-items: left;
 }
 
 header {
@@ -36,7 +36,7 @@ header {
   left: 0;
   top: 0;
   width: 100vw;
-  height: 10vw;
+  height: 8vw;
   background-color: rgba(61, 61, 61, 0.8);
   padding: 3px;
   mix-blend-mode: screen;
@@ -49,7 +49,7 @@ header {
 }
 
 main {
-  margin-top: 10vw;
+  margin-top: 8.5vw;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
@@ -57,11 +57,11 @@ main {
 
 .sidemenu {
   order: -1;
-  width: 15vw;
-  height: 47vw;
+  width: 12.5vw;
+  height: 32vw;
   background-color: rgba(61, 61, 61, 0.8);
-  padding: 1vw;
-  margin-top: 1vw;
+  padding: 0.2vw;
+  margin-top: 0.1vw;
   margin-bottom: 1vw;
   border-radius: 2px;
 }
@@ -77,18 +77,18 @@ button {
   background-color: rgb(43, 43, 43);
   color: rgb(200, 200, 200);
   font-size: 1vw;
-  width: 14vw;
+  width: 12vw;
   height: 3vw;
-  padding: 3px;
+  padding: 0.2vw;
   margin-top: 3px;
-  margin-left: 0.2vw;
+  margin-left: 0.1vw;
   margin-right: 0px;
   border: 2px solid rgba(20, 20, 20, 0.5);
   border-radius: 3px;
 }
 
 .mainpage {
-  font-size: 2vw;
+  font-size: 1vw;
   width: 82vw;
   height: 70vh;
   color: white;
@@ -96,19 +96,34 @@ button {
   margin-top: 1vh;
   padding: 1vh;
 }
+
+.mainpage a {  
+  color: white;
+  text-decoration: none;
+}
+
+.mainpage a:hover {
+  text-decoration: underline;
+}
+
+.container figure {
+  display: flex;
+  justify-content: space-around;  
+  height: 45vw;
+}
+
 .mainpage #profiletext {
   width: 700px;
   height: 100px;
 }
 
 footer {
-
   z-index: 1;
   position: fixed;
   left: 0;
-  top: 59vw;
+  top: 41vw;
   width: 100vw;
-  height: 10vw;
+  height: 7vw;
   background-color: rgba(61, 61, 61, 0.8);
   padding: 3px;
   mix-blend-mode: screen;
@@ -127,8 +142,7 @@ footer {
 	background-size: 50vw 200vh;
 	}
 	.sidemenu {
-  		width: 15vw;
-	}
+  	}
 	header {
 		  font-size: 4vw;
 	}
