@@ -50,7 +50,7 @@ header {
 
 main {
   margin-top: 10vw;
-  width: 1870px;
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
 }
@@ -89,8 +89,8 @@ button {
 
 .mainpage {
   font-size: 2vw;
-  width: 700px;
-  height: 1400x;
+  width: 82vw;
+  height: 70vh;
   color: white;
   margin-left: 2vw;
   margin-top: 1vh;
