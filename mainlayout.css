@@ -6,24 +6,42 @@
 }
 body {
   height: 300vh;
-  background-image: url("assets/imgs/Wallpaper.jpg");
-  background-size: 100vw 200vh;
-  opacity: 0.77;
   background-blend-mode: darken;
   font-family: 'fantasy';
-  font-size: 12px;
+  font-size: 1vw;
 }
 
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+.container video {
+  z-index: -1;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
 
 header {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100vw;
   height: 10vw;
   background-color: rgba(61, 61, 61, 0.8);
   padding: 3px;
   mix-blend-mode: screen;
   border-radius: 3px;
-  font-family: 'TESLA';
+  font-family: 'TESLA', 'fantasy';
   font-size: 4vw;
   color: white;
   text-align: center;
@@ -31,8 +49,8 @@ header {
 }
 
 main {
+  margin-top: 10vw;
   width: 1870px;
-
   display: flex;
   flex-wrap: wrap;
 }
@@ -59,11 +77,11 @@ button {
   background-color: rgb(43, 43, 43);
   color: rgb(200, 200, 200);
   font-size: 1vw;
-  width: 15vw;
-  height: 43px;
+  width: 14vw;
+  height: 3vw;
   padding: 3px;
   margin-top: 3px;
-  margin-left: 0px;
+  margin-left: 0.2vw;
   margin-right: 0px;
   border: 2px solid rgba(20, 20, 20, 0.5);
   border-radius: 3px;
