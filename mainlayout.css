@@ -1,32 +1,48 @@
+/* reset css com ajuste do calculo das bordas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
+  height: 300vh;
   background-image: url("assets/imgs/Wallpaper.jpg");
+  background-size: 100vw 200vh;
   opacity: 0.77;
   background-blend-mode: darken;
+  font-family: 'fantasy';
+  font-size: 12px;
 }
 
-#container header main footer {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 header {
-  width: 1870px;
-  height: 200px;
+  width: 100vw;
+  height: 10vw;
   background-color: rgba(61, 61, 61, 0.8);
-  padding: 5px;
+  padding: 3px;
   mix-blend-mode: screen;
   border-radius: 3px;
+  font-family: 'TESLA';
+  font-size: 4vw;
+  color: white;
+  text-align: center;
+  align-content: center;
 }
 
 main {
   width: 1870px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .sidemenu {
-  width: 243px;
-  height: 2000px;
+  order: -1;
+  width: 15vw;
+  height: 70vh;
   background-color: rgba(61, 61, 61, 0.8);
-  margin: 5px;
+  padding: 3px;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 2px;
@@ -42,10 +58,10 @@ button {
   font-family: fantasy, sans-serif;
   background-color: rgb(43, 43, 43);
   color: rgb(200, 200, 200);
-  font-size: 17px;
-  width: 243px;
+  font-size: 1vw;
+  width: 15vw;
   height: 43px;
-  padding: 5px;
+  padding: 3px;
   margin-top: 3px;
   margin-left: 0px;
   margin-right: 0px;
@@ -54,10 +70,13 @@ button {
 }
 
 .mainpage {
+  font-size: 2vw;
   width: 700px;
   height: 1400x;
   color: white;
-  padding-left: 300px;
+  margin-left: 2vw;
+  margin-top: 1vh;
+  padding: 1vh;
 }
 .mainpage #profiletext {
   width: 700px;
@@ -65,9 +84,24 @@ button {
 }
 
 footer {
-  width: 1870px;
-  height: 200px;
+  width: 100vw;
+  height: 10vw;
   background-color: rgba(61, 61, 61, 0.8);
-  padding: 5px;
+  padding: 3px;
   border-radius: 2px;
-}/*# sourceMappingURL=mainlayout.css.map */
+}
+/* Se tamanho viewport < 430px */
+
+@media (min-width: 430px) {
+	body {
+	
+	background-size: 50vw 200vh;
+	}
+	.sidemenu {
+  		width: 15vw;
+	}
+	header {
+		  font-size: 4vw;
+	}
+}
+/*# sourceMappingURL=mainlayout.css.map */
