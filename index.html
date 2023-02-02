@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="mainlayout.css">
     <title>rodrigopazian</title>
     <script>
-        let profiletext = 'Rodrigo Pazian<br>Brasileiro, 31 anos';
-        let repositoriestext = 'https://github.com/rodrigopazian<br>';
-        let professionaltext = 'OBJETIVO<br><br>Busco uma oportunidade na área de Análise e Desenvolvimento de Sistemas para adquirir experiência e aprofundar o conhecimento em desenvolvimento de softwares. Fui aprovado no vestibular FIAP Online e iniciarei o curso Superior de Tecnologia em  Análise e Desenvolvimento de Sistemas, em fevereiro de 2023, a fim de ingressar e me tornar um profissional nessa área.<br><br>EXPERIÊNCIA<br><br>ThyssenKrupp, Campo Limpo SP — Técnico em eletrônica<br>OUTUBRO DE 2013 - SETEMBRO DE 2019<br>Técnico em eletrônica em Laboratório de Instrumentação Eletrônica, manutenção de equipamentos e sensores eletrônicos.<br><br>PAZIAN ESCRITÓRIO CONTÁBIL, Jundiaí SP — Auxiliar de Escritório<br>FEVEREIRO DE 2011 - JANEIRO DE 2012<br>';
-        let personaltext = '';
+        let profiletext = '<b><h1>FORMAÇÃO</h1></b><br><br><b><h2>Faculdade de informática e Administração Paulista (FIAP), EAD São Paulo SP — Nível Superior em Tecnologia</h2></b><br><h4>FEVEREIRO DE 2023 - EAD São Paulo SP<br>Superior de Tecnologia em  Análise e Desenvolvimento de Sistemas</h4><br><br><b><h2>Colégio Divino Salvador, Jundiaí SP — Nível Técnico<h2></b><br><h4>JANEIRO DE 2010 - DEZEMBRO DE 2013 - Jundiaí SP<br>Técnico em eletrônica  no Colégio Técnico Divino Salvador</h4><br><br><b><h2>ETECVAV, Jundiaí SP — Nível Técnico</h2></b><br><h4>JANEIRO DE 2008 - DEZEMBRO DE 2009 - Jundiaí SP<br>Técnico em informática no Colégio Técnico Vasco Antônio Venchiarutti</h4><br>';
+
+        let linkstext = '<h1><b>PROFILES</b></h1><br><br><h2><b>Linkedin:</b>     <h3><a href="https://www.linkedin.com/in/rodrigopazian/">https://www.linkedin.com/in/rodrigopazian/</a></h3><br><b>GitHub:</b>     <h3><a href="https://github.com/rodrigopazian">https://github.com/rodrigopazian</a></h3><br><b>Email:</b>     <h3>rodrigopazian4322@gmail.com</h3></h2>';
+        let professionaltext = '<h1><b>OBJETIVO</b></h1><br><br><h2>Busco uma oportunidade na área de Análise e Desenvolvimento de Sistemas para adquirir experiência e aprofundar o conhecimento em desenvolvimento de softwares. Fui aprovado no vestibular FIAP Online e iniciarei o curso Superior de Tecnologia em  Análise e Desenvolvimento de Sistemas, em fevereiro de 2023, a fim de ingressar e me tornar um profissional nessa área.</h2><br><br><h1><b>EXPERIÊNCIA</b></h1><br><br><h2><b>ThyssenKrupp, Campo Limpo SP — Técnico em eletrônica</b></h2><br><h4>OUTUBRO DE 2013 - SETEMBRO DE 2019<br>Técnico em eletrônica em Laboratório de Instrumentação Eletrônica, manutenção de equipamentos e sensores eletrônicos.</h4><br><br><h2><b>PAZIAN ESCRITÓRIO CONTÁBIL, Jundiaí SP — Auxiliar de Escritório</b></h2><br><h4>FEVEREIRO DE 2011 - JANEIRO DE 2012</h4><br>';
+        let curriculoimg = '<figure><img class="curriculo" src="./assets/imgs/Curriculo_Rodrigo_Pazian_1_2.png" alt="Curriculo"></figure>';
         function escreve(mainpagetext) {
             document.querySelector('#mainpagetext').innerHTML = mainpagetext;
         }
@@ -34,9 +35,9 @@
             </div>    
             <div class="sidemenu">
                         <button onclick="escreve(profiletext)" id="profile">Profile</button>
-                        <button onclick="escreve(repositoriestext)" id="repositories">GitHub Repositories</button>
+                        <button onclick="escreve(linkstext)" id="repositories">Profile Links</button>
                         <button onclick="escreve(professionaltext)" id="professional">Professional</button>
-                        <button onclick="escreve(personaltext)" id="personal">Personal</button>
+                        <button onclick="escreve(curriculoimg)" id="personal">Currículo</button>
                         <button id="Null"></button>
                         <button id="Null"></button>
                         <button id="Null"></button>
