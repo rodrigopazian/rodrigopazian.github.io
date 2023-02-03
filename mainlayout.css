@@ -136,15 +136,50 @@ footer {
 }
 /* Se tamanho viewport < 430px */
 
-@media (min-width: 430px) {
-	body {
-	
-	background-size: 50vw 200vh;
+@media (max-width: 430px) {
+	main {
+  		margin-top: 18.5vw;
+ 	}
+	header {
+		align-item: center;
+		height: 17vw;
 	}
 	.sidemenu {
-  	}
-	header {
-		  font-size: 4vw;
+  		order: -1;
+  		width: 20vw;
+  		height: 80vh;
+  		padding: 0.2vw;
+  		margin-top: 0.1vw;
+  		margin-bottom: 1vw;
+  		border-radius: 2px;
+	}
+	button {
+  		font-size: 3vw;
+  		width: 19vw;
+  		height: 3vh;
+  		padding: 0.2vw;
+  		margin-top: 3px;
+  		margin-left: 0.1vw;
+  		margin-right: 0px;
+  		border: 1px solid rgba(20, 20, 20, 0.5);
+  		border-radius: 2px;
+	}
+	.mainpage {
+  		font-size: 2.2vw;
+  		width: 78vw;
+  		height: 70vh;
+  		margin-left: 2vw;
+  		margin-top: 1vh;
+  		padding: 1vh;
+	}
+	.container figure {
+  		display: flex;
+  		justify-content: space-around;  
+  		height: 55vh;
+	}
+	footer {
+		top: 90vh;
+		height: 17vw;
 	}
 }
 /*# sourceMappingURL=mainlayout.css.map */
